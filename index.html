@@ -36,31 +36,30 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 <script>
 var docMod = document.lastModified; // loads last modified time stamp into docMod variable
-alert("This file last modified " + docMod); // generates alert box with time stamp. If annoying, comment out this entire line.
 console.log("This file last modified " + docMod); // generates message in javaScript console (found in developers tools) with time stamp. 
 </script>
 
 
 
-<style>	
-.body {
-     margin: 0em;
-}
-.page {
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: -100vw;
-    overflow-y: auto;
-    z-index: 0;
-    background-color: hsl(0,0%,100%);
-}
-  .page:target {
-    left: 0vw;
-    z-index: 1;
-}
-</style>
+<style>
+        body {
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        canvas {
+            border: 2px solid black;
+            display: block;
+            margin: auto;
+            max-width: 100%;
+            height: auto;
+        }
+        button {
+            margin: 5px;
+            padding: 10px;
+            font-size: 16px;
+        }
+    </style> <!-- this part of the code allows for the parameters to fit within an iPhone screen -->
 
 <body>
 <div id="header" class="w3-container w3-flat-carrot">
