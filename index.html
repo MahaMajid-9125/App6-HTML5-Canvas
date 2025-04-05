@@ -36,7 +36,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 <script>
 var docMod = document.lastModified; // loads last modified time stamp into docMod variable
-console.log("This file last modified " + docMod); // generates message in javaScript console (found in developers tools) with time stamp. 
+console.log("This file last modified " + docMod); // generates message in JavaScript console (found in developers tools) with time stamp. 
 </script>
 
 
@@ -92,6 +92,15 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 	function drawRectangle() {
             ctx.fillStyle = "blue";
             ctx.fillRect(20, 20, 100, 50);
+		
         } // this is the function to draw a rectangle - it links back to its respective button
+	
+	function writeName() {
+            ctx.font = "24px Arial";
+            ctx.fillStyle = "red";
+            ctx.fillText("Maha", 20, 100);
+		
+        } // this is the function to write my name (Maha) - it links back to its respective button
+
 </body>
 </html>
