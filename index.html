@@ -118,5 +118,10 @@ console.log("This file last modified " + docMod); // generates message in JavaSc
                 ctx.fillText("Image failed to load.", 20, canvas.height / 2);
             };
         } // this is an error message that is necessary to make sure the image loads properly
+
+	function clearCanvas() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+        } // this is the function to clear the canvas
+</script>
 </body>
 </html>
