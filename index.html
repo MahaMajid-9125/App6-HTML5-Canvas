@@ -91,14 +91,14 @@ console.log("This file last modified " + docMod); // generates message in JavaSc
 
 	function drawRectangle() {
             ctx.fillStyle = "blue";
-            ctx.fillRect(20, 20, 100, 50);
+            ctx.fillRect(20, 20, 100, 50); // these are the parameters of the rectangle
 		
         } // this is the function to draw a rectangle - it links back to its respective button
 	
 	function writeName() {
             ctx.font = "24px Arial";
             ctx.fillStyle = "red";
-            ctx.fillText("Maha", 20, 100);
+            ctx.fillText("Maha", 20, 100); // these are the parameters my name
 		
         } // this is the function to write my name (Maha) - it links back to its respective button
 
@@ -107,7 +107,7 @@ console.log("This file last modified " + docMod); // generates message in JavaSc
             img.src = "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Sunflower_sky_backdrop.jpg/640px-Sunflower_sky_backdrop.jpg";
             img.crossOrigin = "anonymous";
             img.onload = function () {
-                ctx.drawImage(img, 150, 20, 100, 50); 
+                ctx.drawImage(img, 150, 20, 100, 50); // these are the parameters of the flower image
             }; // this is the function to load an image - it links back to its respective button
 </body>
 </html>
