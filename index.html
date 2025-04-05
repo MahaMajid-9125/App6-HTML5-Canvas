@@ -68,7 +68,7 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 	<h1>App6---HTML5-Canvas</h1>
 	<p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at Austin. This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
         <p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION</p>
-    </div>	
+    </div> <!-- this is the header and subheader -->	
 <div id="content" class="w3-container">
         <canvas id="myCanvas"></canvas>
         <br>
@@ -76,14 +76,22 @@ console.log("This file last modified " + docMod); // generates message in javaSc
         <button onclick="writeName()">Write Name</button>
         <button onclick="loadImage()">Load Image</button>
         <button onclick="clearCanvas()">Clear Canvas</button>
-    </div>
-	<p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at 		Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code 			does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
- 	
-	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
-
+</div>
 <footer class="w3-bottom w3-container w3-flat-carrot">
 	<p>DIY!</p>
 </footer>
+<script>
+        var docMod = document.lastModified;
+        console.log("This file last modified " + docMod);
 
+        const canvas = document.getElementById("myCanvas");
+        const ctx = canvas.getContext("2d");
+        canvas.width = window.innerWidth * 0.9;
+        canvas.height = window.innerHeight * 0.5; // these are additional iPhone screen parameters
+
+	function drawRectangle() {
+            ctx.fillStyle = "blue";
+            ctx.fillRect(20, 20, 100, 50);
+        } // this is the function to draw a rectangle - it links back to its respective button
 </body>
 </html>
