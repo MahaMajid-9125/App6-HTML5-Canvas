@@ -108,6 +108,15 @@ console.log("This file last modified " + docMod); // generates message in JavaSc
             img.crossOrigin = "anonymous";
             img.onload = function () {
                 ctx.drawImage(img, 150, 20, 100, 50); // these are the parameters of the flower image
-            }; // this is the function to load an image - it links back to its respective button
+        }; // this is the function to load an image - it links back to its respective button
+
+	    img.onerror = function () {
+                console.error("Image failed to load. Check the URL.");
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                ctx.font = "16px Arial";
+                ctx.fillStyle = "black";
+                ctx.fillText("Image failed to load.", 20, canvas.height / 2);
+            };
+        } // this is an error message that is necessary to make sure the image loads properly
 </body>
 </html>
