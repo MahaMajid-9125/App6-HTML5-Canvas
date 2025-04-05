@@ -102,5 +102,12 @@ console.log("This file last modified " + docMod); // generates message in JavaSc
 		
         } // this is the function to write my name (Maha) - it links back to its respective button
 
+	function loadImage() {
+            const img = new Image();
+            img.src = "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Sunflower_sky_backdrop.jpg/640px-Sunflower_sky_backdrop.jpg";
+            img.crossOrigin = "anonymous";
+            img.onload = function () {
+                ctx.drawImage(img, 150, 20, 100, 50); 
+            }; // this is the function to load an image - it links back to its respective button
 </body>
 </html>
